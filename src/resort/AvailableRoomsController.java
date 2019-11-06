@@ -1,5 +1,11 @@
 package resort;
 
+/* Needs to be done:
+1. Update pricing based on the dates selected.
+2. Show different available rooms based on the number of guests.
+3. Show no rooms available for black out dates and no availability (booked up).
+ */
+
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,12 +28,11 @@ public class AvailableRoomsController {
    */
   @FXML
   void goToCreateAccountPage(MouseEvent event) throws IOException {
-    ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent root = FXMLLoader.load(getClass().getResource("create_account.fxml"));
-    Stage create = new Stage();
-    create.setTitle("Create Account");
-    create.setScene(new Scene(root, 800, 600));
-    create.show();
+    Parent createAccountParent = FXMLLoader.load(getClass().getResource("create_account.fxml"));
+    Scene createAccountScene = new Scene(createAccountParent);
+    Stage createAccountStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    createAccountStage.setScene(createAccountScene);
+    createAccountStage.show();
   }
 
   /**
@@ -39,11 +44,10 @@ public class AvailableRoomsController {
    */
   @FXML
   void goToPreviousPage(MouseEvent event) throws IOException {
-    ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent root = FXMLLoader.load(getClass().getResource("new_guest.fxml"));
-    Stage home = new Stage();
-    home.setTitle("Check Availability");
-    home.setScene(new Scene(root, 800, 600));
-    home.show();
+    Parent newGuestParent = FXMLLoader.load(getClass().getResource("new_guest.fxml"));
+    Scene newGuestScene = new Scene(newGuestParent);
+    Stage newGuestStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    newGuestStage.setScene(newGuestScene);
+    newGuestStage.show();
   }
 }

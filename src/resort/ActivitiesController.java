@@ -1,5 +1,10 @@
 package resort;
 
+/* Needs to be done:
+1. Compare dates chosen to dates guests are staying at the resort.
+2. Compare number of guests signing up for activity to number of guests in party.
+ */
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +28,7 @@ public class ActivitiesController {
   /**
    * ChoiceBox numberOfGuestsRental is used to put how many people are registering for the rental.
    */
-  @FXML private ChoiceBox<?> numberOfGuestsRental;
+  @FXML private ChoiceBox<Integer> numberOfGuestsRental;
 
   /** DatePicker rentalDatePicker is used to select a date during their stay to use the rental. */
   @FXML private DatePicker rentalDatePicker;
@@ -37,7 +42,7 @@ public class ActivitiesController {
    * ChoiceBox numberOfGuestsSnorkeling is used to to put how many people are registering for the
    * snorkeling tour.
    */
-  @FXML private ChoiceBox<?> numberOfGuestsSnorkeling;
+  @FXML private ChoiceBox<Integer> numberOfGuestsSnorkeling;
 
   /**
    * The initialize() function is used to initialize the number of guests in the rental and
@@ -58,17 +63,49 @@ public class ActivitiesController {
   }
 
   /**
-   * The goToConfirmationPage() method will go to the confirmation page to confirm their activity.
-   * It must have both the date and number of guests selected and the date must be within their stay
-   * which is checked with the database.
-   *
-   * @param event will open the confirmation page
+   * The goToRentalConfirmationPage() method will go to the confirmation page to confirm the guest's
+   * activity. It must have both the date and number of guests selected and the date must be within
+   * their stay which is checked with the database.
    */
   @FXML
-  void goToConfirmationPage(MouseEvent event) {
-    Alert confirmation = new Alert(AlertType.CONFIRMATION);
-    confirmation.setContentText("Your activity has been confirmed!");
-    confirmation.show();
+  void goToRentalConfirmationPage() {
+    if (rentalDatePicker.getValue() == null) {
+      Alert error = new Alert(AlertType.ERROR);
+      error.setContentText("Please choose an appropriate date.");
+      error.show();
+    } else {
+      Alert confirmation = new Alert(AlertType.CONFIRMATION);
+      confirmation.setContentText(
+          "Your party of "
+              + numberOfGuestsRental.getSelectionModel().getSelectedItem().toString()
+              + " has been confirmed. We look forward to seeing you on "
+              + rentalDatePicker.getValue().toString()
+              + ".");
+      confirmation.show();
+    }
+  }
+
+  /**
+   * The goToSnorkelingConfirmationPage() method will go to the confirmation page to confirm the
+   * guest's activity. It must have both the date and number of guests selected and the date must be
+   * within their stay which is checked with the database.
+   */
+  @FXML
+  void goToSnorkelingConfirmationPage() {
+    if (snorkelingDatePicker.getValue() == null) {
+      Alert error = new Alert(AlertType.ERROR);
+      error.setContentText("Please choose an appropriate date.");
+      error.show();
+    } else {
+      Alert confirmation = new Alert(AlertType.CONFIRMATION);
+      confirmation.setContentText(
+          "Your party of "
+              + numberOfGuestsSnorkeling.getSelectionModel().getSelectedItem().toString()
+              + " has been confirmed. We look forward to seeing you on "
+              + snorkelingDatePicker.getValue().toString()
+              + ".");
+      confirmation.show();
+    }
   }
 
   /**
@@ -80,11 +117,11 @@ public class ActivitiesController {
    */
   @FXML
   void goToPreviousPage(MouseEvent event) throws IOException {
-    ((Node) (event.getSource())).getScene().getWindow().hide();
-    Parent root = FXMLLoader.load(getClass().getResource("current_guest_options.fxml"));
-    Stage home = new Stage();
-    home.setTitle("Please choose an option");
-    home.setScene(new Scene(root, 800, 600));
-    home.show();
+    Parent currentGuestOptionsParent =
+        FXMLLoader.load(getClass().getResource("current_guest_options.fxml"));
+    Scene currentGuestOptionsScene = new Scene(currentGuestOptionsParent);
+    Stage currentGuestOptionsStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    currentGuestOptionsStage.setScene(currentGuestOptionsScene);
+    currentGuestOptionsStage.show();
   }
 }
