@@ -4,6 +4,13 @@ package resort;
 1. Method written to update last 4 of CCN from CheckoutController
  */
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,10 +26,19 @@ public class ConnManager {
   private ResultSet resultSet;
   private Statement statement;
 
+  @FXML private TableView<?> customerInformationTableView;
+
+  @FXML private TableColumn<?, ?> nameColumn;
+
+  @FXML private TableColumn<?, ?> phoneNumberColumn;
+
+  @FXML private TableColumn<?, ?> last4CCNColumn;
+
+
   ConnManager() throws SQLException {
     conn =
         DriverManager.getConnection(
-            "jdbc:h2:C:\\Users\\acava\\OneDrive - Florida Gulf Coast University\\COP 3003\\PeakMountainLodge\\src\\resort\\Database\\productDB");
+            "jdbc:h2:./res/productDB");
   }
 
   // Creates a new customer
@@ -209,6 +225,33 @@ public class ConnManager {
     }
   }
 
+  /*
+      Filling in the Customer Information table in the Manager Overview Section
+   */
+  /*public void customerInformationMO(String customerInformation){
+    try{
+      statement = conn.createStatement();
+      String sql = "SELECT * FROM customers";
+      resultSet = statement.executeQuery(sql);
+      while (resultSet.next()) {
+        String FIRSTNAME = resultSet.getString(1);
+        String LASTNAME = resultSet.getString(1);
+        Integer PHONENUMBER = resultSet.getInt(2);
+        Integer LASTFOURCC = resultSet.getInt(4);
+
+        ObservableList<ManagerDriver> customerInfo = FXCollections.observableArrayList();
+        nameColumn.setCellValueFactory(new PropertyValueFactory("customerName"));
+        phoneNumberColumn.setCellValueFactory(new PropertyValueFactory("customerPhNum"));
+        last4CCNColumn.setCellValueFactory(new PropertyValueFactory("last4CNN"));
+
+        customerInformationTableView.setItems(customerInfo);
+
+      }
+    } catch (SQLException e) {
+      sqlExceptionHandler(e);
+    }
+  }*/
+/************************************************************************************************/
   private void sqlExceptionHandler(SQLException error) {
     System.out.println("Standard Failure: " + error.getMessage());
   }
