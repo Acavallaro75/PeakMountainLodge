@@ -77,12 +77,12 @@
       </TableView>
          <TextArea layoutX="21.0" layoutY="14.0" prefHeight="148.0" prefWidth="294.0" text="WARNING: This screen shows current &#10;Promotional Discounts that have been&#10;set. If new discounts are added, it will &#10;affect the prices shown to customers &#10;upon the next update cycle. " />
          <JFXDatePicker layoutX="493.0" layoutY="18.0" />
-         <TextField layoutX="493.0" layoutY="62.0" />
+         <TextField fx:id="discountPromoTf" layoutX="493.0" layoutY="62.0" />
          <Label layoutX="443.0" layoutY="34.0" text="Date:" />
          <Label layoutX="322.0" layoutY="67.0" text="Price Discount Amount:" />
-         <Button layoutX="530.0" layoutY="139.0" mnemonicParsing="false" text="Set Promotion" />
-         <TextField layoutX="494.0" layoutY="100.0" />
-         <Label layoutX="380.0" layoutY="105.0" text="Room Number:" />
+         <Button layoutX="547.0" layoutY="137.0" mnemonicParsing="false" text="Set Promotion" />
+         <Label layoutX="400.0" layoutY="105.0" text="Room Type:" />
+         <ChoiceBox fx:id="rTypePromoCB" layoutX="530.0" layoutY="100.0" prefWidth="150.0" />
     </AnchorPane>
   </Tab>
   <Tab text="Customer Information">
