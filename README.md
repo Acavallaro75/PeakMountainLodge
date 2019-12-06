@@ -70,6 +70,18 @@ CEN 3031 Resort Project Thursday Group 1
 
 - [Initial Use Case Diagram](https://drive.google.com/open?id=1V__t1IfBsPuiqwV9d8YnLm9Ah3PzHnLE)
 
+#### Shall Statements Draft:
+
+- [Shall Statements Draft](https://drive.google.com/open?id=1WsSSga8F5FHj9TIsHPj1BO25PYZaR18t)
+
+#### Initial Requirements SRS:
+
+- [Initial Requirements SRS](https://drive.google.com/open?id=1-qYioQ2nalh4xw8ogSX9xhEEx5DkiUaX)
+
+#### Final Requirements SRS:
+
+- [Final Requirements SRS]()
+
 ## Diagrams
 
 #### Class Diagram:
@@ -79,7 +91,6 @@ CEN 3031 Resort Project Thursday Group 1
 #### Database Visualization:
 
 ![Database Visualization](src/resort/images/database_visualization.png)
-
 
 ## Project Features
 
