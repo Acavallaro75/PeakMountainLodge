@@ -38,6 +38,8 @@ Please use the following link to view the [JavaDoc](https://acavallaro75.github.
 #### Class Diagram:
 ![Class Diagram](src/resort/images/class_diagram.png)
 
+![Database Visualization](src/resort/images/database_visualization.png)
+
 
 ## Project Features
 
