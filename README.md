@@ -60,6 +60,12 @@ CEN 3031 Resort Project Thursday Group 1
 
 Please use the following link to view the [JavaDoc](https://acavallaro75.github.io/SandyShoresResort/index.html) for this project.
 
+Please use the following link to view our [project setup](https://drive.google.com/open?id=1lfS6IWl4w93qnfdubguOHzA8Cco3e4SJ).
+
+Please use the following link to view our [initial use case diagram](https://drive.google.com/open?id=1V__t1IfBsPuiqwV9d8YnLm9Ah3PzHnLE).
+
+Please use the following link
+
 ## Diagrams
 
 #### Class Diagram:
