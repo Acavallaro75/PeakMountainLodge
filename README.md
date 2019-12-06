@@ -1,14 +1,15 @@
 # Sandy Shores Resort
 
 #### Group and Group Members:
-- CEN 3031 Resort Project Thursday Group 1
+
+CEN 3031 Resort Project Thursday Group 1
 - Andrew Cavallaro
 - Joseph Cisar
 - Elizabeth Gonzalez
 - Shawn Hasten
 - Daniel Miller
 
-## Installation
+## Getting Started
 
 - On the [home page](https://github.com/Acavallaro75/SandyShoresResort) of the Sandy Shores resort, select the clone or download drop-down menu and copy the URL displayed in that menu. Alternatively, the link is here for your convenience: https://github.com/Acavallaro75/SandyShoresResort.git.
 
@@ -18,25 +19,29 @@
 
 - You will be prompted with a message asking if you would like to open the project. Select yes to view the project.
 
-## Running the Program
-
 - A runnable jar has been made, so you should only need to go to the Main class in the resort package and press run to access the program.
 
 - On the left side of the Main class select the green triangle and select "Run 'Main.main()'" and the program should run.
 
 - The database also has been implemented with a jar file, so that should aslo work with no problems.
 
+- For the manager login screen, the default username and password are Cavallaro and 512560, respectively.
+
+- For the guest login screen, the default last name and phone number are Cavallaro and 6629984, respectively.
+
 ## Documentation
 
-- Please use the following link to view the [JavaDoc](https://acavallaro75.github.io/SandyShoresResort/index.html) for this project.
+Please use the following link to view the [JavaDoc](https://acavallaro75.github.io/SandyShoresResort/index.html) for this project.
 
 ## Diagrams
 
 #### Class Diagram:
 ![Class Diagram](src/resort/images/class_diagram.png)
 
+![Database Visualization](src/resort/images/database_visualization.png)
 
-## Functionality:
+
+## Project Features
 
 #### Home Page:
 
