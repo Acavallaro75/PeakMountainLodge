@@ -100,6 +100,14 @@ CEN 3031 Resort Project Thursday Group 1
 
 - The graphical user interface (GUI) was built using SceneBuilder.
 
+## History
+
+- [Initial release](https://drive.google.com/open?id=1l_d6EO77SzX9TDxy0C7L7fkw2gBNgv80)
+
+- [Second release](https://drive.google.com/open?id=12ht0cK6k5AD-TKdCOH52c-M7lR7fVYWw)
+
+- [Final release and presentation](https://drive.google.com/open?id=11qqudZGUo7N6W-DH2MOCLtOIaFEZiVVk)
+
 ## Project Features
 
 #### Home Page:
