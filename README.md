@@ -84,9 +84,15 @@ CEN 3031 Resort Project Thursday Group 1
 
 ## Diagrams
 
-#### Class Diagram:
+#### Class Diagrams:
 
-![Class Diagram](src/resort/images/class_diagram.png)
+#### UML:
+
+![UML Class Diagram](src/resort/images/class-diagram.jpg)
+
+#### IntelliJ:
+
+![IntelliJ Class Diagram](src/resort/images/class_diagram.png)
 
 #### Database Visualization:
 
