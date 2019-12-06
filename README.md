@@ -92,6 +92,14 @@ CEN 3031 Resort Project Thursday Group 1
 
 ![Database Visualization](src/resort/images/database_visualization.png)
 
+## Built With
+
+- The integrated development environment (IDE) used for this project was IntelliJ IDEA Ultimate Edition. The Java Development Kit (JDK) is Java 8.1.221.
+
+- The database that is implemented in this project is an H2 database. The database contains three tables: employees, customers, and reservations.
+
+- The graphical user interface (GUI) was built using SceneBuilder.
+
 ## Project Features
 
 #### Home Page:
