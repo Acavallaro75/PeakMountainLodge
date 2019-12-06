@@ -80,7 +80,9 @@ CEN 3031 Resort Project Thursday Group 1
 
 #### Final Requirements SRS:
 
-- [Final Requirements SRS]()
+- [Final Requirements SRS](https://drive.google.com/open?id=1-qYioQ2nalh4xw8ogSX9xhEEx5DkiUaX)
+
+_Not updated_
 
 ## Diagrams
 
