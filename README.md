@@ -1,5 +1,32 @@
 # Sandy Shores Resort
 
+Project description: Sandy Shores Resort is a program for a resort/hotel that would be able to implemented into a resort and hospitality business. It allows for the following functions:
+
+- The system shall allow customers to view available rooms at the resort for a date that they have selected.
+- The system shall update the price of the rooms according to the date the customer has selected.
+- The system shall gather the first name, last name, email address, phone number, reservation date, and credit card number from the customer and store them into a database.
+- The system shall allow the customer the ability to a make a reservation to the resort on the date they have selected and the number of guests attending.
+- The system shall confirm any and all resort reservations with the customer on the dates they have selected and the number of guests attending.
+- The system shall allow for current resort guests to login to the system and view options for activities, special requests, dining, and guest feedback.
+- The system shall allow for customers to request feather pillows, regular pillows, down comforters, or sheets from the main office.
+- The system shall allow for customers to request shampoo, conditioner, body wash, lotion, hand towels, or bath towels from the main office.
+- The system shall allow for customers to send a direct message to the main office and ask for additional requests.
+- The system shall confirm with the customer any and all special requests that are sent to the main office.
+- The system shall allow for customers to book water rental reservations on a date they have selected and the number of guests attending.
+- The system shall allow for customers to book snorkeling tours on a date they have selected and the number of guests attending.
+- The system shall confirm any and all booked rentals or tours that the customer requests.
+- The system shall allow for customers to make reservations at the resort's dining options on a date they have selected and the number of guests attending.
+- The system shall confirm any and all dining reservations that the customer requests.
+- The system shall allow for customers to check out of their resort stay via the system.
+- The system shall allow for customers to leave feedback to the managerial team about their stay at the resort.
+- The system shall allow for a manager/employee to access financial records, customer information, blackout dates, employee records, and view customer feedback about the resort.
+- The system shall allow for employees to view customer names, emails, reservation dates, phone number, and last four of the credit card on file for past, current, and future customers.
+- The system shall allow for employees to view financial reports on dining, resort activities, room rates, expenses, and total revenue.
+- The system shall allow for employees to view customer feedback about the resort.
+- The system shall allow for employees to enter new employees into the database with their first name, last name, employee ID, and access ID.
+
+Sandy Shores was produced by all teams members of Thursday, Group 1 as part of a group assignment for a Software Engineering Fundamentals course at Florida Gulf Coast University in Fort Myers, Florida.
+
 #### Group and Group Members:
 
 CEN 3031 Resort Project Thursday Group 1
